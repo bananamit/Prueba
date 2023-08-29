@@ -6,8 +6,10 @@ import { Suma } from './suma'
 import { Functions } from './Functions'
 import { ComponentApp } from './ComponentApp'
 import { InputTag } from './InputTag'
-import { Compra } from './Compra'
-import {Tienda} from './Tienda'
+import { Compra } from './Compra'/*imput texto y cantidad*/
+import {Tienda} from './Tienda' /* con botones para agrerar cantidad>*/
+import {CarritoCompra} from './CarritoCompras'
+
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -18,6 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
    {/* <Functions p={0}/>*/}
    {/* <ComponentApp/>*/}
    {/* <InputTag/>*/}
-   <Tienda/>
+   <CarritoCompra/>
   </React.StrictMode>,
 )

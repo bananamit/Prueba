@@ -6,6 +6,7 @@ export const Compra = ()=>{
     const [cantidadP, setCantidadP] = useState('')
 
     const agregarProd =()=>{
+        if (itemName.trim() !== '' && itemQuantity.trim() !== '') {
         const nuevoProduc = {
             nombre: nombreP,
             cantidad: cantidadP
@@ -13,10 +14,17 @@ export const Compra = ()=>{
         setProductos(lista=>[...lista, nuevoProduc])
         setNombreP('')
         setCantidadP('')
+    
+        }
     }
+
+
     const ponerNomProd =(e)=>{
         setNombreP(e.target.value)
     }
+
+
+
     const ponerCantProd =(e)=>{
         setCantidadP(e.target.value)
     }
