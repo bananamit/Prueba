@@ -9,6 +9,7 @@ import { InputTag } from './InputTag'
 import { Compra } from './Compra'/*imput texto y cantidad*/
 import {Tienda} from './Tienda' /* con botones para agrerar cantidad>*/
 import {CarritoCompra} from './CarritoCompras'
+import { Loteria } from './Loteria'/*Loteria con nombre, nuemro, precio*/
 
 import './index.css'
 
@@ -20,6 +21,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
    {/* <Functions p={0}/>*/}
    {/* <ComponentApp/>*/}
    {/* <InputTag/>*/}
-   <CarritoCompra/>
+   <Compra/>
   </React.StrictMode>,
 )
